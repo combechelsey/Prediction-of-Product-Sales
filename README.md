@@ -32,11 +32,11 @@ Employing Regression Modeling to Forecast Item Sales and Illuminate the Formula 
 ![image](https://github.com/combechelsey/Prediction-of-Product-Sales-2/assets/132314345/0f38ad9b-841b-4d06-a992-ae338b3d483e)
 
 #### Total Item Sales by Outlet Type
-![Uploading image.png…]()
+![image](https://github.com/combechelsey/Prediction-of-Product-Sales-2/assets/132314345/f5088429-5a28-443b-ad32-df30cf46284b)
 
 
 
-## Model
+## Regression Modeling Scores
 ![scores](https://github.com/combechelsey/Prediction-of-Product-Sales-2/assets/132314345/e048b575-62a5-41db-a66e-0661c1ffd5f3)
 
 **The Best Tuned Model performance on the training data shows an R-squared of 0.604 with a mean square error of 762.69. With the testing data, the model achieved an R-squared of 0.596 and MSE of 737.71.**
@@ -49,15 +49,15 @@ Describe your final model
 
 ## Recommendations:
 
-More of your own text here
+TBC
 
 
 ## Limitations & Next Steps
 
-More of your own text here
+TBC
 
 
 ### For further information
 
 
-For any additional questions, please contact **email**
+For any additional questions, please contact **chelseycombe@gmail.com**
