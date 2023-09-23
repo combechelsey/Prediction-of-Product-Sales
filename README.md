@@ -85,6 +85,8 @@ print()
 ![Untitled](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/728f6e8f-b650-47d2-bbe8-7b022729b2eb)
 
 
+- The figure above shows the average item sales based on Outlet Type. Supermarket Type 3 has the highest average Item Sales of the four types while Grocery Stores have the lowest averages. 
+
 print()
 print()
 
@@ -157,6 +159,7 @@ print()
 
 ## Global Explanations with SHAP
 
+http://localhost:8812/view/SHAP%20summary%20bar%20plot.png
 
 - Comparing the figure above with the previous figures for feature and permutation importance, the top three features are consistent across all figures. However, the SHAP average impact of features on the models' predictions slightly differs from the values obtained using the decision tree's built-in feature importance.
 - Both SHAP and permutation importance assign slightly less value to Outlet_Type_Grocery_Store, suggesting that the built-in method may have overestimated the importance of this feature in predictions.
@@ -164,6 +167,8 @@ print()
 
 
 ### SHAP Summary
+
+http://localhost:8812/view/SHAP%20summary%20dot%20plot.png
 
 - Item MRP had the most significant impact on our model's predictions. We observe that as the Item MRP value increases, the model is more inclined to predict higher Item Sales.
 
@@ -195,6 +200,10 @@ print()
     - High Outlet Size
     
 #### Example 1: MRP Force Plot & Lime Explanations 
+
+http://localhost:8812/view/SHAP%20force%20plot%20example%201.png
+
+http://localhost:8812/view/Lime%20summary%20example%201.png
 
 - SHAPs force plot predicts a base value of 2154 for this item.
     - The highest magnitude contibution came from Item MRP which positively impacted the sales prediction by the model.  
@@ -229,6 +238,11 @@ print()
     
 
 #### Expample 2: Grocery Store Force Plot & Lime Explanations
+
+http://localhost:8812/view/SHAP%20force%20plot%20example%202.png
+
+http://localhost:8812/view/Lime%20summary%20example%202.png
+
 
 - Our SHAP force plot predicts a base value of 2,154 for this item.  
     - The highest magnitude contribution was Outlet_Type_Grocery Store.  The outlet being categorized as this type of store resulted in the predicted sales being reduced significantly. 
