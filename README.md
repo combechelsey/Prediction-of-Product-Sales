@@ -50,51 +50,50 @@ Employing Regression Modeling to Forecast Item Sales and Illuminate the Formula 
 ## **Project 1 - Revisited**
 
 **Linear Regression Coefficients**
-![Untitled](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/498250c3-661b-4514-9784-3ca29fa7de3a)
+
+
 
 ### LinearRegression Coefficients Explained
 - Top three positive coefficients
-    - **"Supermarket Type 3" Outlet Type:** This feature has the highest positive correlation on Item Sales.  A "Supermarket Type-3" outlet is associated with higher sales. 
-    - **Outlet Identifier 27:** This particular store is positively correlated with our target and item sales tend to be higher at this location. 
-    - **"Medium" Outlet Size:** Outlets with a medium size tend to have higher sales compared to small or large outlet sizes. 
-
+    - **"Supermarket Type 3" Outlet Type:** An outlet type of "Supermarket type 3" is predicted by our model to increase Outlet_Item_Sales by 600 rupees.
+    - **Outlet Identifier 27:**  Store number 27 is predicted by our model to increase Outlet_Item_Sales by 600 rupees.
+    - **"Medium" Outlet Size:** Our model predicts that Item_sales increase by about 400 rupees when the outlet is of medium size.   
       
 - Top three negative coefficients        
-    - **"Grocery Store" Outlet Type:** this classification has the strongest negative correlation and is associated with lower sales. Customers typically buy less in grocery stores compared to other types of outlets according to this model.
-        
-    - **Outlet Identifier 19:**  Specifically, the outlet with the identifier "OUT019" has a significant negative correlation with sales. Sales tend to be lower in this particular outlet.
-    - **Outlet Identifier 19:**  Similar to above, Outlet 10 also negatively correlates with sales and suggest that this outlet may also underperform in terms of sales.
+    - **"Grocery Store" Outlet Type:** this classification has the strongest negative coefficient and our model predicts that an outlet of this type would generate 900 less rupees in sales.        
+    - **Outlet Identifier 19:**  Specifically, the outlet with the identifier "OUT019is predicted to reduce Item_Sales by almost 500 rupees.
+    - **Outlet Identifier 19:**  Similar to above, store 19 is predicted to reduce Item Sales predictions by just over 400 rupees.
 
 
-![Untitled](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/65b2e607-3d72-45e3-8731-e54dda88e942)
+**AVERAGE SALES BY OUTLET IDENTIFIER**
 
-![Untitled](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/fa2ca2f1-aaf0-43c2-8668-4aefb731db66)
+- Outlet 27 has the highest average Item Sales.  
+- Outlets 10 and 19 have the lowest Item Sales.  
 
-![Untitled](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/8729b53c-03b9-4468-9946-73863b0bd608)
+**AVERAGE SALES BY OUTLET SIZE**
 
-**XGBoost Feature Importance**
+- Medium- sized outlets have the highest Item Sales.
+- Small outlets tend to have the lowest average sales.  
 
-![Untitled](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/d0293518-7221-4a38-81cf-3bf8c8ecd8fc)
+/n
+/n
+/n 
 
 
-### XG Boost Permutation Feature Importance Explained
+### Tuned Decision Tree Permutation Feature Importance Explained
 - Top three features
-    - **Item MRP (1.01):** This model predicts that for every dollar change in MRP, Item sales increase or decrease by 1.01 units.   
-    - **Outlet Establishment Year (0.21):** This particular store is positively correlated with our target and item sales tend to be higher at this location. For each year in age of the outlet, item sales decrease by 0.22 units.  
-    - **Item Weight (0.14):** Outlets with a medium size tend to have higher sales compared to small or large outlet sizes.  For each ounce in an tems weight, item sales increase or decrease by 0.15 units.
+    - **Item MRP (0.74):**   This feature is the highest-weighted feature used by our model to  predict Item Sales.  It is assigned a score of 0.74.
+    - **Outlet Type Grocey Store (0.38):** This is the second highest-weighted feature predicted by our model with a score of 0.38.  
+    - **Outlet Type Supermarket Type 3 (0.13):**  Outlets of Supermarket Type 3 are predicted to influence the predicted target by a coefficient score of 0.13, ranking this type third highest weighted feature according to the model.
   
-![Untitled](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/37dfe9ba-02c2-468a-a853-be88fbf79b32)
 
-![Untitled](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/f28325a5-e666-4d30-9504-f98a2c78a0ce)
+**ITEM MRP VS. TOTAL ITEM SALES**
 
+- There is a positive trend of higher Item Sales as Item MRP increases.
 
-![Untitled](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/85ddd0eb-a653-4a5e-8180-c1c6cef373fa)
+**OUTLET TYPE VS TOTAL ITEM SALES**
 
-
-
-
-
-
+- The figure above shows the average item sales based on Outlet Type.  Supermarket Type 3 has the highest average Item Sales of the four types while Grocery Stores have the lowest averages.  
 
 
 ## Recommendations:
