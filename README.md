@@ -159,7 +159,8 @@ print()
 
 ## Global Explanations with SHAP
 
-http://localhost:8812/view/SHAP%20summary%20bar%20plot.png
+![SHAP summary bar plot](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/6140c129-cc12-4b18-a570-4d951b22988b)
+
 
 - Comparing the figure above with the previous figures for feature and permutation importance, the top three features are consistent across all figures. However, the SHAP average impact of features on the models' predictions slightly differs from the values obtained using the decision tree's built-in feature importance.
 - Both SHAP and permutation importance assign slightly less value to Outlet_Type_Grocery_Store, suggesting that the built-in method may have overestimated the importance of this feature in predictions.
@@ -168,7 +169,8 @@ http://localhost:8812/view/SHAP%20summary%20bar%20plot.png
 
 ### SHAP Summary
 
-http://localhost:8812/view/SHAP%20summary%20dot%20plot.png
+![SHAP summary dot plot](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/aaf1a385-8313-40e1-af77-af4690e5535b)
+
 
 - Item MRP had the most significant impact on our model's predictions. We observe that as the Item MRP value increases, the model is more inclined to predict higher Item Sales.
 
@@ -201,9 +203,10 @@ print()
     
 #### Example 1: MRP Force Plot & Lime Explanations 
 
-http://localhost:8812/view/SHAP%20force%20plot%20example%201.png
+![SHAP force plot example 1](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/14c80a74-d20a-45d4-8efc-2056847fe8ee)
 
-http://localhost:8812/view/Lime%20summary%20example%201.png
+![Lime summary example 1](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/fae4410e-1085-413a-bbe8-f6f39bf5be4d)
+
 
 - SHAPs force plot predicts a base value of 2154 for this item.
     - The highest magnitude contibution came from Item MRP which positively impacted the sales prediction by the model.  
@@ -239,9 +242,10 @@ http://localhost:8812/view/Lime%20summary%20example%201.png
 
 #### Expample 2: Grocery Store Force Plot & Lime Explanations
 
-http://localhost:8812/view/SHAP%20force%20plot%20example%202.png
+![SHAP force plot example 2](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/64e55c54-6c8c-49c5-abc7-d5f0f63ae57d)
 
-http://localhost:8812/view/Lime%20summary%20example%202.png
+
+![Lime summary example 2](https://github.com/combechelsey/Prediction-of-Product-Sales/assets/132314345/b1fd01da-5dac-4810-87bd-7ab8763a32d4)
 
 
 - Our SHAP force plot predicts a base value of 2,154 for this item.  
